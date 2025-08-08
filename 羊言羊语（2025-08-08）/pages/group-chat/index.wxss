@@ -1,0 +1,806 @@
+.bottom-operating-area-container {
+    background: #e5eaff;
+    bottom: 0rpx;
+    height: 96rpx;
+    left: 0rpx;
+    padding: 16rpx 40rpx env(safe-area-inset-bottom);
+    position: absolute;
+    width: calc(750rpx - 80rpx);
+    z-index: 10;
+}
+
+.bottom-operating-area-container,.bottom-operating-area-container .area-box {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-operating-area-container .area-box {
+    padding-bottom: 16rpx;
+    position: relative;
+}
+
+.bottom-operating-area-container .input-handle-container {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom-operating-area-container .input-handle-container .input-box {
+    align-items: center;
+    background: hsla(0,0%,100%,.5);
+    border-radius: 48rpx;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 88rpx;
+    padding: 0 12rpx 0 40rpx;
+    width: 598rpx;
+}
+
+.bottom-operating-area-container .input-handle-container .input-box input {
+    box-sizing: border-box;
+    color: #35394d;
+    font-size: 32rpx;
+    height: 88rpx;
+    outline: none;
+    padding-right: 12rpx;
+    width: 100%;
+}
+
+.bottom-operating-area-container .input-handle-container .input-box .send-icon {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/send-icon.svg) no-repeat 50%/contain;
+    height: 64rpx;
+    width: 64rpx;
+}
+
+.bottom-operating-area-container .input-handle-container .handle-icon {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/voice-black-icon.svg) no-repeat 50%/contain;
+    height: 48rpx;
+    margin-left: 24rpx;
+    width: 48rpx;
+}
+
+.bottom-operating-area-container .voice-handle-container,.bottom-operating-area-container .voice-handle-container .box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom-operating-area-container .voice-handle-container .box {
+    align-items: center;
+    height: 88rpx;
+}
+
+.bottom-operating-area-container .voice-handle-container .record-handle-box {
+    overflow: hidden;
+    width: 0rpx;
+}
+
+.bottom-operating-area-container .voice-handle-container .record-handle-box.is-press {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bottom-operating-area-container .voice-handle-container .voice-handle-box {
+    width: 100%;
+}
+
+.bottom-operating-area-container .voice-handle-container .voice-handle-box.is-press {
+    overflow: hidden;
+    width: 0rpx;
+}
+
+.bottom-operating-area-container .voice-handle-container .voice-box {
+    align-items: center;
+    background: hsla(0,0%,100%,.5);
+    border-radius: 48rpx;
+    box-sizing: border-box;
+    color: #735ce5;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 32rpx;
+    font-weight: 500;
+    height: 88rpx;
+    justify-content: center;
+    padding: 0 12rpx 0 40rpx;
+    width: 598rpx;
+}
+
+.bottom-operating-area-container .voice-handle-container .voice-box .voice-icon {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/voice-purple-icon.svg) no-repeat 50%/contain;
+    height: 40rpx;
+    margin-right: 16rpx;
+    width: 40rpx;
+}
+
+.bottom-operating-area-container .voice-handle-container .handle-icon {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/keyboard-icon.svg) no-repeat 50%/contain;
+    height: 48rpx;
+    margin-left: 24rpx;
+    width: 48rpx;
+}
+
+.bottom-operating-area-container.is-on-long-press {
+    align-items: flex-end;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(217,223,255,0)),color-stop(37%,rgba(217,223,255,.8)));
+    background: -webkit-linear-gradient(top,rgba(217,223,255,0),rgba(217,223,255,.8) 37%);
+    background: linear-gradient(180deg,rgba(217,223,255,0),rgba(217,223,255,.8) 37%);
+    height: 480rpx;
+}
+
+.bottom-operating-area-container.is-on-long-press .voice-handle-container {
+    align-items: center;
+    background-color: #735ce5;
+    border-radius: 48rpx;
+    height: 88rpx;
+    justify-content: center;
+    margin-bottom: 16rpx;
+    position: relative;
+    width: 670rpx;
+}
+
+.bottom-operating-area-container.is-on-long-press .voice-handle-container image {
+    height: 48rpx;
+    width: 128rpx;
+}
+
+.bottom-operating-area-container.is-on-long-press .voice-handle-container .record-tips {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/cancel-black.png) no-repeat 50%/contain;
+    height: 80rpx;
+    left: 294rpx;
+    position: absolute;
+    top: -120rpx;
+    width: 80rpx;
+}
+
+.bottom-operating-area-container.is-on-long-press .voice-handle-container .record-tips.move-out {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/cancel-red.png) no-repeat 50%/contain;
+}
+
+.bottom-operating-area-container .at-box {
+    bottom: 104rpx;
+    color: #666a80;
+    font-size: 24rpx;
+    left: 0rpx;
+    position: absolute;
+    width: 598rpx;
+}
+
+.bottom-operating-area-container .at-box,.bottom-operating-area-container .at-box .box-left {
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.bottom-operating-area-container .at-box .box-left {
+    flex-shrink: 0;
+    justify-content: center;
+    margin-top: 8rpx;
+    width: 96rpx;
+}
+
+.bottom-operating-area-container .at-box .at-item {
+    align-items: center;
+    background: #faba25;
+    border-radius: 24rpx;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 8rpx;
+    margin-right: 16rpx;
+    padding: 4rpx 8rpx 4rpx 4rpx;
+}
+
+.bottom-operating-area-container .at-box .at-item .portrait {
+    height: 40rpx;
+    width: 40rpx;
+}
+
+.bottom-operating-area-container .at-box .at-item .portrait image {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom-operating-area-container .at-box .at-item .name {
+    color: #fff;
+    font-size: 24rpx;
+    font-weight: 500;
+    line-height: 32rpx;
+    margin: 0rpx 16rpx 0rpx 8rpx;
+}
+
+.bottom-operating-area-container .at-box .at-item .cancel {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/at-cancel.svg) no-repeat 50%/contain;
+    height: 32rpx;
+    position: relative;
+    width: 32rpx;
+}
+
+.bottom-operating-area-container .at-box .at-item .cancel:before {
+    background-color: hsla(0,0%,100%,.3);
+    content: "";
+    display: block;
+    height: 16rpx;
+    left: -8rpx;
+    position: absolute;
+    top: 8rpx;
+    width: 2rpx;
+}
+
+.people-display-area {
+    height: 400rpx;
+    position: relative;
+    width: 100%;
+}
+
+.people-display-area.peoples-num-2 {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.people-display-area.peoples-num-3 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.people-display-area.peoples-num-3 .area-top {
+    align-items: flex-start;
+}
+
+.people-display-area.peoples-num-3 .area-bottom,.people-display-area.peoples-num-3 .area-top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+}
+
+.people-display-area.peoples-num-3 .area-bottom {
+    align-items: flex-end;
+}
+
+.people-display-area.peoples-num-4 {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rpx 76rpx;
+}
+
+.people-display-area.peoples-num-4 .area-top {
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50%;
+    justify-content: flex-end;
+}
+
+.people-display-area.peoples-num-4 .area-bottom {
+    align-items: flex-end;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50%;
+    justify-content: flex-start;
+}
+
+.people-display-area.peoples-num-5 {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.people-display-area.peoples-num-5 .area-top {
+    align-items: flex-start;
+}
+
+.people-display-area.peoples-num-5 .area-bottom,.people-display-area.peoples-num-5 .area-top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+}
+
+.people-display-area.peoples-num-5 .area-bottom {
+    align-items: flex-end;
+}
+
+.people-display-area.peoples-num-6 {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.people-display-area.peoples-num-6 .area-top {
+    align-items: flex-start;
+}
+
+.people-display-area.peoples-num-6 .area-bottom,.people-display-area.peoples-num-6 .area-top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+}
+
+.people-display-area.peoples-num-6 .area-bottom {
+    align-items: flex-end;
+}
+
+.people-display-area .area-item {
+    height: 180rpx;
+    position: relative;
+    width: 180rpx;
+}
+
+.people-display-area .area-item .image-box {
+    z-index: 2;
+}
+
+.people-display-area .area-item.is-at .image-box {
+    height: 124rpx;
+    padding: 10rpx;
+    position: relative;
+    width: 124rpx;
+}
+
+.people-display-area .area-item.is-at .image-box::before {
+    border: 4rpx solid #ffd24c;
+    border-radius: 50%;
+    content: "";
+    height: 132rpx;
+    left: 0rpx;
+    opacity: .8;
+    position: absolute;
+    top: 0rpx;
+    width: 132rpx;
+}
+
+.people-display-area .area-item.is-at .is-play::after {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/wave-new.webp) no-repeat top/contain;
+    content: "";
+    height: 180rpx;
+    left: -20rpx;
+    position: absolute;
+    top: -20rpx;
+    width: 180rpx;
+    z-index: 1;
+}
+
+.people-display-area .area-item .at-tips {
+    align-items: flex-start;
+    background: hsla(0,0%,100%,.8);
+    border-radius: 16rpx;
+    color: #958fb2;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 24rpx;
+    left: 0rpx;
+    padding: 12rpx 16rpx;
+    position: absolute;
+    top: -60rpx;
+    z-index: 9;
+}
+
+.people-display-area .area-item .at-tips::before {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/arrows-icon.svg) no-repeat 50%/contain;
+    bottom: -8rpx;
+    content: "";
+    height: 16rpx;
+    position: absolute;
+    right: 50%;
+    width: 12rpx;
+}
+
+.people-display-area .people-item {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    left: 0rpx;
+    position: absolute;
+    top: 0rpx;
+    transition: top 5s ease,left 5s ease;
+}
+
+.people-display-area .people-item image {
+    border-radius: 50%;
+    height: 120rpx;
+    width: 120rpx;
+}
+
+.people-display-area .people-item.is-administrator::before {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/administrator-icon.svg) no-repeat 50%/contain;
+    content: "";
+    height: 40rpx;
+    position: absolute;
+    right: -12rpx;
+    top: 0rpx;
+    width: 40rpx;
+}
+
+.people-display-area .people-item.is-play::after {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/wave-new.webp) no-repeat top/contain;
+    content: "";
+    height: 180rpx;
+    left: -30rpx;
+    position: absolute;
+    top: -30rpx;
+    width: 180rpx;
+    z-index: 1;
+}
+
+.people-display-area .people-item.is-human::before {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group/inviter_crown.png) no-repeat 50%/contain;
+    content: "";
+    height: 40rpx;
+    position: absolute;
+    right: -12rpx;
+    top: 0rpx;
+    width: 40rpx;
+}
+
+.people-display-area .people-item .name {
+    color: #958fb2;
+    font-size: 24rpx;
+}
+
+.people-display-area .ball-item {
+    height: 30rpx;
+    position: absolute;
+    transition: top 10s ease,left 10s ease;
+    width: 30rpx;
+}
+
+.people-display-area .ball-item image {
+    height: 100%;
+    width: 100%;
+}
+
+.people-display-area .ball-item:first-child {
+    height: 20rpx;
+    width: 20rpx;
+}
+
+.index {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group/bg.png) no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: auto;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.index .group-chat-header {
+    flex: 1;
+    overflow: hidden;
+}
+
+.index .group-chat-header .group-chat-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index .group-chat-header .group-chat-tag {
+    background-color: #fa89c1;
+    border-radius: 16rpx;
+    color: #fff;
+    font-size: 22rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    padding: 0 12rpx;
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.index .stage-container {
+    padding-top: 40rpx;
+    width: 100%;
+}
+
+.index .stage-container,.index .stage-container .stage-box {
+    height: 452rpx;
+    transition: all .5s ease;
+}
+
+.index .stage-container .stage-box {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/stage-bg-2024-01-26.png) no-repeat 50%/contain;
+    margin: 0 auto;
+    width: 648rpx;
+}
+
+.index .stage-container .stage-box .people-box {
+    height: 400rpx;
+    margin: 0 auto;
+    transition: all .5s ease;
+    width: 600rpx;
+}
+
+.index .stage-container.is-open {
+    height: 800rpx;
+    padding-top: 100rpx;
+    transition: all .5s ease;
+}
+
+.index .stage-container.is-open .stage-box {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/stage-open-bg-2024-01-26.png) no-repeat 50%/contain;
+    height: 772rpx;
+    margin: 0 auto;
+    transition: all .5s ease;
+    width: 750rpx;
+}
+
+.index .stage-container.is-open .stage-box .people-box {
+    height: 400rpx;
+    margin: 160rpx auto 0;
+    padding-top: 160rpx;
+    transition: all .5s ease;
+    width: 600rpx;
+}
+
+.index .stage-handle-container {
+    background: hsla(0,0%,100%,.5);
+    border-radius: 18rpx;
+    height: 28rpx;
+    margin: 24rpx auto;
+    width: 112rpx;
+}
+
+.index .stage-handle-container .fold-icon {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/group-chat/fold-icon.svg) no-repeat 50%/contain;
+    height: 28rpx;
+    width: 112rpx;
+}
+
+.index .stage-handle-container.up {
+    margin-top: 160rpx;
+    transform: rotate(180deg);
+}
+
+.index .dialogue-box-container {
+    font-size: 32rpx;
+    opacity: 1;
+    padding: 0rpx 24rpx;
+    transition: visibility .8s,opacity .8s;
+    width: calc(100vw - 48rpx);
+}
+
+.index .dialogue-box-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.index .dialogue-box-container .inner-time {
+    color: #666a80;
+    font-size: 24rpx;
+    margin-bottom: 20rpx;
+    text-align: center;
+}
+
+.index .dialogue-box-container .dialogue-item {
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24rpx;
+    padding-top: 16rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.playing .item-content {
+    background: #ccd5ff!important;
+}
+
+.index .dialogue-box-container .dialogue-item:last-child {
+    margin-bottom: 0rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.self-box {
+    flex-direction: row-reverse;
+}
+
+.index .dialogue-box-container .dialogue-item.self-box .item-content {
+    background: #735ce5;
+    color: #fff;
+    opacity: .9;
+    position: relative;
+    text-align: left;
+}
+
+.index .dialogue-box-container .dialogue-item.self-box .item-content::before {
+    border-bottom: 8rpx solid transparent;
+    border-left: 12rpx solid rgba(115,92,229,.8);
+    border-top: 8rpx solid transparent;
+    content: "";
+    height: 0rpx;
+    position: absolute;
+    right: -12rpx;
+    top: 32rpx;
+    width: 0rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.self-box .item-portrait {
+    margin-left: 20rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box {
+    position: relative;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content {
+    background: hsla(0,0%,100%,.5);
+    color: #35394d;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    opacity: .9;
+    position: relative;
+    text-align: left;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content > image {
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content::before {
+    border-bottom: 8rpx solid transparent;
+    border-right: 12rpx solid hsla(0,0%,100%,.3);
+    border-top: 8rpx solid transparent;
+    content: "";
+    height: 0rpx;
+    left: -12rpx;
+    position: absolute;
+    top: 32rpx;
+    width: 0rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content .content-story {
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content .content-story .story-item {
+    align-items: center;
+    background: rgba(0,0,0,.1);
+    border-radius: 20rpx;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 24rpx;
+    gap: 20rpx;
+    justify-content: center;
+    padding: 4rpx 16rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content .content-story .story-item:nth-child(2) {
+    margin: 0rpx 8rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-portrait {
+    margin-right: 20rpx;
+}
+
+.index .dialogue-box-container .dialogue-item .item-portrait {
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 64rpx;
+    width: 64rpx;
+}
+
+.index .dialogue-box-container .dialogue-item .item-portrait > image {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.index .dialogue-box-container .dialogue-item .item-content {
+    border-radius: 16rpx;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 32rpx;
+    justify-content: center;
+    max-width: 534rpx;
+    min-height: 44rpx;
+    padding: 18rpx 24rpx;
+}
+
+.index .dialogue-box-container .dialogue-item .voice-paly {
+    align-items: center;
+    background: #faa700;
+    border-radius: 16rpx 16rpx 16rpx 4rpx;
+    color: #fff;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 22rpx;
+    height: 32rpx;
+    justify-content: center;
+    left: 85rpx;
+    padding: 0rpx 12rpx;
+    position: absolute;
+    top: 0rpx;
+    z-index: 9;
+}
+
+.index .dialogue-box-container .dialogue-item .voice-paly > image {
+    height: 20rpx;
+    margin-right: 8rpx;
+    width: 20rpx;
+}
+
+.index .safe-area {
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+    left: constant(safe-area-inset-left);
+    left: env(safe-area-inset-left);
+    position: fixed;
+    right: constant(safe-area-inset-right);
+    right: env(safe-area-inset-right);
+    top: 0;
+    width: 100%;
+    z-index: -99;
+}
+
+.index-module__audioContent___PpJgj {
+    align-items: center;
+    min-width: 240rpx;
+}
+
+.index-module__aiImage___JaPXy {
+    border-radius: 20rpx;
+}
+
+.index-module__imageContent___idIIT {
+    align-items: center;
+    background: transparent;
+    border-radius: 20rpx;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+}
+

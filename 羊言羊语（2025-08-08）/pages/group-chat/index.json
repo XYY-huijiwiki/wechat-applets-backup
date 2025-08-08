@@ -1,0 +1,8 @@
+{
+    "disableScroll": true,
+    "navigationBarTitleText": "羊羊聊天群",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

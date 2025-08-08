@@ -1,0 +1,8 @@
+{
+    "disableScroll": true,
+    "navigationBarTitleText": "羊言羊语",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

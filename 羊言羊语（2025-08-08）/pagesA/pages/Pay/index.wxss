@@ -1,0 +1,131 @@
+@import "../../sub-vendors.wxss";
+.pay_success_wrap {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+}
+
+.pay_success_wrap Image {
+    height: 160rpx;
+    margin-top: 304rpx;
+    width: 160rpx;
+}
+
+.pay_success_wrap .pay_text {
+    color: #7f4e38;
+    font-family: PingFang SC;
+    font-size: 40rpx;
+    font-weight: 600;
+    margin-top: 40rpx;
+    text-align: center;
+}
+
+.pay_info {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 168rpx;
+}
+
+.pay_info .price {
+    position: relative;
+}
+
+.pay_info .price .now-price {
+    color: #f7601a;
+    font-family: Barlow SemiBold;
+    font-size: 100rpx;
+    font-weight: 600;
+    line-height: 120rpx;
+}
+
+.pay_info .price .now-price .small {
+    font-size: 60rpx;
+}
+
+.pay_info .price .origin-price {
+    color: #8c553b;
+    font-family: PingFang SC;
+    font-size: 32rpx;
+    font-weight: 600;
+    line-height: 38.4rpx;
+    text-align: center;
+}
+
+.pay_info .price .origin-price .line {
+    font-family: Barlow SemiBold;
+    margin-left: 8rpx;
+    text-decoration-line: line-through;
+}
+
+.pay_info .price .price-tip {
+    height: 48rpx;
+    position: absolute;
+    right: -186rpx;
+    top: -32rpx;
+    width: 220rpx;
+}
+
+.pay_detail {
+    background-color: #fff;
+    border-radius: 24rpx;
+    display: block;
+    margin: 120rpx 40rpx 0;
+    padding: 40rpx 40rpx 0;
+    width: calc(100% - 160rpx);
+}
+
+.pay_detail .title {
+    align-items: center;
+    color: #8c553b;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 36rpx;
+    font-weight: 600;
+    line-height: 48rpx;
+    margin-bottom: 24rpx;
+}
+
+.pay_detail .title .border {
+    background-color: #ffa22e;
+    border-radius: 20rpx;
+    display: inline-block;
+    height: 40rpx;
+    margin-right: 12rpx;
+    width: 8rpx;
+}
+
+.pay_detail .detail {
+    line-height: 52rpx;
+    margin-bottom: 40rpx;
+}
+
+.pay_success_btn {
+    bottom: env(safe-area-inset-bottom);
+    justify-content: center;
+    left: 0;
+    padding-bottom: 80rpx;
+    padding-left: 40rpx;
+    position: absolute;
+    width: calc(100% - 80rpx);
+}
+
+.pay_success_btn,page {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+page {
+    background-color: #f6f1ec;
+    flex-direction: column;
+    height: 100vh;
+}
+

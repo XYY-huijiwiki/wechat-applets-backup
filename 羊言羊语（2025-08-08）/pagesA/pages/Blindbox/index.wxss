@@ -1,0 +1,206 @@
+@import "../../sub-vendors.wxss";
+.blind-box-page {
+    background-image: url(https://virtualhuman-app.oss-cn-beijing.aliyuncs.com/interaction/public/ip-miniprogram/imgs/blind_bg.png);
+    background-size: 100% 100%;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.blind-box-page,.blind-box-page .blind-box-top {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.blind-box-page .blind-box-top {
+    color: #fff;
+    justify-content: space-between;
+    left: 104rpx;
+    position: absolute;
+    top: 19%;
+    width: calc(100% - 208rpx);
+}
+
+.blind-box-page .blind-box-top .item {
+    align-items: center;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.blind-box-page .blind-box-top .item.dis {
+    color: hsla(0,0%,100%,.3);
+}
+
+.blind-box-page .blind-box-top .before image {
+    margin-right: 16rpx;
+}
+
+.blind-box-page .blind-box-top .after image {
+    margin-left: 16rpx;
+}
+
+.blind-box-page .blind-box-top image {
+    height: 48rpx;
+    width: 48rpx;
+}
+
+.blind-box-page .blindBoxDefault {
+    background-image: url(https://virtualhuman-app.oss-cn-beijing.aliyuncs.com/interaction/public/ip-miniprogram/imgs/lock-bg.png);
+}
+
+.blind-box-page .blind-box-content {
+    align-items: center;
+    background-size: 100% 100%;
+    border-radius: 26rpx;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: calc(46% - env(safe-area-inset-bottom) - env(safe-area-inset-top));
+    justify-content: center;
+    overflow: hidden;
+    padding-top: env(safe-area-inset-top);
+    position: absolute;
+    top: 28%;
+    width: calc(100% - 208rpx);
+}
+
+.blind-box-page .blind-box-content .blur-overlay {
+    backdrop-filter: blur(10rpx);
+    border-radius: 26rpx;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.blind-box-page .blind-box-content .blind-box-image {
+    height: 112rpx;
+    width: 112rpx;
+    z-index: 5;
+}
+
+.blind-box-page .blind-box-content .blind-box-text {
+    color: #fff;
+    font-family: PingFang SC;
+    font-size: 32rpx;
+    font-weight: 500;
+    margin-top: 16rpx;
+    z-index: 5;
+}
+
+.blind-box-page .blind-box-date {
+    align-items: center;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.8);
+    justify-content: space-between;
+    left: 0;
+    padding: 20rpx 32rpx;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.blind-box-page .blind-box-date,.blind-box-page .blind-box-date .date {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.blind-box-page .blind-box-date .date .left {
+    font-family: Barlow SemiBold;
+    font-size: 68rpx;
+    font-weight: 600;
+    line-height: 68rpx;
+    margin-right: 16rpx;
+    mix-blend-mode: difference;
+}
+
+.blind-box-page .blind-box-date .date .right {
+    font-family: Barlow SemiBold;
+    font-size: 24rpx;
+    font-weight: 600;
+    line-height: 34rpx;
+    mix-blend-mode: difference;
+    padding-left: 16rpx;
+    position: relative;
+    text-align: center;
+}
+
+.blind-box-page .blind-box-date .date .right ::after {
+    background: rgba(0,0,0,.3);
+    content: "";
+    height: 52rpx;
+    left: 0;
+    position: absolute;
+    top: 9rpx;
+    width: 2rpx;
+}
+
+.blind-box-page .blind-box-date .lunar {
+    font-family: PingFang SC;
+    font-size: 28rpx;
+    font-weight: 500;
+    line-height: 39.2rpx;
+    mix-blend-mode: difference;
+}
+
+.blind-box-page .tiezhi1 {
+    height: 268rpx;
+    left: 0;
+    position: absolute;
+    top: 526rpx;
+    width: 220rpx;
+    z-index: 5;
+}
+
+.blind-box-page .tiezhi2 {
+    height: 350rpx;
+    position: absolute;
+    right: 0;
+    top: 752rpx;
+    width: 218rpx;
+    z-index: 5;
+}
+
+.blind-box-page .lock-btn {
+    margin: 20rpx;
+    position: absolute;
+    top: 74%;
+    width: calc(100% - 308rpx);
+}
+
+.blind-box-page .unlock-btn {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 40rpx;
+    border-width: 2rpx solid #8c553b;
+    box-sizing: border-box;
+    color: #8c553b;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 26rpx;
+    height: 64rpx;
+    justify-content: center;
+    margin-top: 20rpx;
+    padding: 4rpx 16rpx 4rpx 4rpx;
+    z-index: 5;
+}
+
+.blind-box-page .unlock-btn image {
+    height: 56rpx;
+    margin-right: 8rpx;
+    width: 56rpx;
+}
+

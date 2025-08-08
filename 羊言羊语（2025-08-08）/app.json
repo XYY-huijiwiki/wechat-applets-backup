@@ -1,0 +1,23 @@
+{
+    "pages": [
+        "pages/group/index",
+        "pages/index/index",
+        "pages/group-chat/index",
+        "pages/group-manager/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "WeChat"
+    },
+    "subPackages": [
+        {
+            "root": "pagesA/",
+            "pages": [
+                "pages/Pay/index",
+                "pages/Blindbox/index"
+            ]
+        }
+    ]
+}

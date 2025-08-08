@@ -1,0 +1,8 @@
+{
+    "disableScroll": true,
+    "navigationBarTitleText": "群管理",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}
