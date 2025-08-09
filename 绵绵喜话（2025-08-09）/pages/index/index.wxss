@@ -1,0 +1,59 @@
+.index-module__profileLoginBtn___gTGyg {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: auto;
+    top: 0;
+    width: 320rpx;
+    z-index: 22;
+}
+
+.index-module__blindBoxLogin___wrEoP {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.index-module__navbarWrap___Il45W {
+    height: 100%;
+    width: 100%;
+}
+
+.index-module__navbarTitle___kufLc,.index-module__navbarWrap___Il45W {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.index-module__navbarTitle___kufLc {
+    background: rgba(43,72,115,.9);
+    border-radius: 8rpx;
+    color: #fff;
+    font-family: PingFang SC;
+    font-size: 28rpx;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    line-height: normal;
+    margin-left: 12rpx;
+    padding: 8rpx;
+    text-align: center;
+}
+
+.index-module__navbarTitle___kufLc::before {
+    border-bottom: 8rpx solid transparent;
+    border-right: 12rpx solid rgba(43,72,115,.9);
+    border-top: 8rpx solid transparent;
+    content: "";
+    height: 0rpx;
+    left: -12rpx;
+    position: absolute;
+    top: 18rpx;
+    width: 0rpx;
+}
+

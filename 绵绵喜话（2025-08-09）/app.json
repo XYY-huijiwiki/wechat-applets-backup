@@ -1,0 +1,20 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/home/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "WeChat"
+    },
+    "subPackages": [
+        {
+            "root": "pagesA/",
+            "pages": [
+                "pages/chat/index"
+            ]
+        }
+    ]
+}

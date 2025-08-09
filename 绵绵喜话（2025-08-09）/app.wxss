@@ -1,0 +1,553 @@
+.base-container {
+    flex: 0 0;
+    width: 750rpx;
+    z-index: 100;
+}
+
+.base-container > .navigation {
+    align-items: center;
+    box-sizing: border-box;
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 36rpx;
+    gap: 16rpx;
+    justify-content: center;
+    padding: 0 20rpx;
+    width: 750rpx;
+}
+
+.base-container .navigation-content {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+}
+
+.textarea-mask-container {
+    background-color: rgba(0,0,0,.5);
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+}
+
+.textarea-mask-container .textare-container {
+    color: #fff;
+    padding: 32rpx 40rpx;
+}
+
+.textarea-mask-container .textare-container textarea {
+    caret-color: #3f8df2;
+    width: 100%;
+}
+
+.textarea-mask-container .bottom-handle-container {
+    align-items: center;
+    bottom: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 168rpx;
+    justify-content: center;
+    left: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    position: absolute;
+    right: 0;
+    width: 100vw;
+}
+
+.textarea-mask-container .bottom-handle-container .handle-item > image {
+    height: 100%;
+    width: 100%;
+}
+
+.textarea-mask-container .bottom-handle-container .close {
+    height: 80rpx;
+    width: 80rpx;
+}
+
+.textarea-mask-container .bottom-handle-container .main {
+    height: 128rpx;
+    margin: 0rpx 64rpx;
+    width: 128rpx;
+}
+
+.textarea-mask-container .bottom-handle-container .empty {
+    height: 80rpx;
+    width: 80rpx;
+}
+
+.login-btn {
+    background-color: initial;
+    bottom: 0;
+    height: 240rpx;
+    left: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    position: fixed;
+    right: 0;
+    width: 100vw;
+    z-index: 99;
+}
+
+.login-btn,.login-btn::after {
+    border: none;
+}
+
+.login-btn.hidden {
+    display: none;
+}
+
+.voice-record-btn-container {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.voice-record-btn-container .voice-record-btn-default {
+    display: none;
+    height: 128rpx;
+    width: 128rpx;
+}
+
+.voice-record-btn-container .voice-record-btn-default > image {
+    height: 100%;
+    width: 100%;
+}
+
+.voice-record-btn-container .voice-record-btn-default.default-show {
+    display: block;
+}
+
+.voice-record-btn-container .voice-record-btn-active {
+    display: none;
+    position: relative;
+}
+
+.voice-record-btn-container .voice-record-btn-active.active-show {
+    display: block;
+}
+
+.voice-record-btn-container .voice-record-btn-active .progress_center {
+    background-color: #3f8df2;
+    border-radius: 50%;
+    height: 56PX;
+    left: 12PX;
+    position: absolute;
+    top: 12PX;
+    width: 56PX;
+}
+
+.voice-record-btn-container .voice-record-btn-active .progress_bg {
+    height: 80PX;
+    position: absolute;
+    width: 80PX;
+}
+
+.voice-record-btn-container .voice-record-btn-active .progress_canvas {
+    height: 80PX;
+    width: 80PX;
+}
+
+.voice-record-btn-container .record-tips {
+    background: rgba(0,0,0,.3);
+    border-radius: 24rpx;
+    color: #fff;
+    font-size: 24rpx;
+    height: 48rpx;
+    line-height: 32rpx;
+    line-height: 48rpx;
+    padding: 0rpx 16rpx;
+    position: absolute;
+    text-align: center;
+    top: -88rpx;
+    width: 240rpx;
+}
+
+.voice-record-btn-container .record-tips.is-active {
+    background: #ff7b73;
+    width: 128rpx;
+}
+
+.index {
+    background: #0d296d url(https://commercial-cdn.xiaoice.com/character-ip/xiyangyang-mini-images/bg_12_21.png);
+    background-position: 0rpx -240rpx;
+    background-repeat: no-repeat;
+    background-size: 750rpx 1864rpx;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: background-position .5s ease;
+    width: 100vw;
+}
+
+.index .safe-area {
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+    left: constant(safe-area-inset-left);
+    left: env(safe-area-inset-left);
+    position: fixed;
+    right: constant(safe-area-inset-right);
+    right: env(safe-area-inset-right);
+    top: 0;
+    width: 100%;
+    z-index: -99;
+}
+
+.index.expand {
+    background-position: 0rpx 0rpx;
+    transition: background-position .5s ease;
+}
+
+.index.expand .canvas-container {
+    top: -65rpx;
+}
+
+.index.expand .booth {
+    top: 942rpx;
+    transform: scale(1.109375);
+}
+
+.index.expand .expand-btn {
+    top: 1114rpx;
+    transform: scaleY(-1);
+}
+
+.index.expand .scrollview {
+    opacity: 0;
+    top: 1162rpx;
+}
+
+.index .canvas-container {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2096rpx;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: -326rpx;
+    transform-origin: center center;
+    transition: all .5s ease;
+    width: 750rpx;
+    z-index: 2;
+}
+
+.index .canvas-container > canvas {
+    height: 100%;
+    width: 100%;
+}
+
+.index .canvas-container.is-hidden {
+    opacity: 0;
+}
+
+.index .booth {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/xiyangyang-mini-images/images/booth.png) no-repeat 50%/cover;
+    height: 156rpx;
+    left: 55rpx;
+    position: absolute;
+    top: 684rpx;
+    transform-origin: center center;
+    transition: all .5s ease;
+    width: 640rpx;
+    z-index: 1;
+}
+
+.index .expand-btn {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/xiyangyang-mini-images/images/fold_arrow.png) no-repeat 50%/cover;
+    height: 36rpx;
+    left: 311rpx;
+    position: absolute;
+    top: 840rpx;
+    transition: top .5s ease;
+    width: 128rpx;
+    z-index: 3;
+}
+
+.index .expand-btn:before {
+    bottom: -40rpx;
+    content: "";
+    left: -40rpx;
+    position: absolute;
+    right: -40rpx;
+    top: -40rpx;
+}
+
+.index .scrollview {
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 888rpx;
+    transition: top .5s ease,opacity .5s ease;
+    z-index: 2;
+}
+
+.index .dialogue-box-container {
+    font-size: 32rpx;
+    padding: 0rpx 24rpx;
+}
+
+.index .dialogue-box-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.index .dialogue-box-container .dialogue-item {
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24rpx;
+    padding-top: 16rpx;
+}
+
+.index .dialogue-box-container .dialogue-item:last-child {
+    margin-bottom: 0rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.self-box {
+    flex-direction: row-reverse;
+}
+
+.index .dialogue-box-container .dialogue-item.self-box .item-content {
+    background: rgba(63,141,242,.9);
+    color: #fff;
+    opacity: .9;
+    position: relative;
+    text-align: left;
+}
+
+.index .dialogue-box-container .dialogue-item.self-box .item-content::before {
+    border-bottom: 8rpx solid transparent;
+    border-left: 12rpx solid rgba(63,141,242,.9);
+    border-top: 8rpx solid transparent;
+    content: "";
+    height: 0rpx;
+    position: absolute;
+    right: -12rpx;
+    top: 32rpx;
+    width: 0rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.self-box .item-portrait {
+    margin-left: 20rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box {
+    position: relative;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content {
+    background: hsla(0,0%,100%,.6);
+    color: #35394d;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    opacity: .9;
+    position: relative;
+    text-align: left;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content > image {
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content::before {
+    border-bottom: 8rpx solid transparent;
+    border-right: 12rpx solid hsla(0,0%,100%,.6);
+    border-top: 8rpx solid transparent;
+    content: "";
+    height: 0rpx;
+    left: -12rpx;
+    position: absolute;
+    top: 32rpx;
+    width: 0rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content .content-story {
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rpx;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-content .content-story .story-item {
+    align-items: center;
+    background: rgba(0,0,0,.1);
+    border-radius: 20rpx;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 24rpx;
+    gap: 20rpx;
+    justify-content: center;
+    padding: 4rpx 16rpx;
+}
+
+.index .dialogue-box-container .dialogue-item.other-box .item-portrait {
+    margin-right: 20rpx;
+}
+
+.index .dialogue-box-container .dialogue-item .item-portrait {
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 64rpx;
+    overflow: hidden;
+    width: 64rpx;
+}
+
+.index .dialogue-box-container .dialogue-item .item-portrait > image {
+    height: 100%;
+    width: 100%;
+}
+
+.index .dialogue-box-container .dialogue-item .item-content {
+    border-radius: 16rpx;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 32rpx;
+    justify-content: center;
+    max-width: 534rpx;
+    min-height: 44rpx;
+    padding: 18rpx 24rpx;
+}
+
+.index .dialogue-box-container .dialogue-item .voice-paly {
+    align-items: center;
+    background: #3f8df2;
+    border-radius: 16rpx 16rpx 16rpx 4rpx;
+    color: #fff;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 22rpx;
+    height: 32rpx;
+    justify-content: center;
+    left: 85rpx;
+    padding: 0rpx 12rpx;
+    position: absolute;
+    top: 0rpx;
+    z-index: 9;
+}
+
+.index .dialogue-box-container .dialogue-item .voice-paly > image {
+    height: 20rpx;
+    margin-right: 8rpx;
+    width: 20rpx;
+}
+
+.index .handle-scene-container {
+    align-items: center;
+    bottom: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 168rpx;
+    justify-content: center;
+    left: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    position: absolute;
+    right: 0;
+    z-index: 9;
+}
+
+.index .handle-scene-container.is-hidden {
+    opacity: 0;
+}
+
+.index .handle-scene-container .handle-item > image {
+    height: 100%;
+    width: 100%;
+}
+
+.index .handle-scene-container .handle-item.handle-text {
+    height: 80rpx;
+    width: 80rpx;
+}
+
+.index .handle-scene-container .handle-item.handle-voice {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 160rpx;
+    justify-content: center;
+    margin: 0rpx 64rpx;
+    width: 160rpx;
+}
+
+.index .handle-scene-container .handle-item.handle-game {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 80rpx;
+    width: 80rpx;
+}
+
+.index .video-container {
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 111;
+}
+
+.index .video-container > video {
+    height: 100%;
+    width: 100%;
+}
+
+.tip-container {
+    background: rgba(0,0,0,.15);
+    border-radius: 18rpx;
+    color: hsla(0,0%,100%,.5);
+    font-size: 20rpx;
+    height: 36rpx;
+    left: 50%;
+    line-height: 36rpx;
+    position: absolute;
+    text-align: center;
+    top: -28rpx;
+    transform: translateX(-50%);
+    width: 230rpx;
+}
+
+.hide_tip {
+    display: none!important;
+}
+
+.blindIcon {
+    height: 112rpx;
+    left: 24rpx;
+    position: absolute;
+    top: 200rpx;
+    width: 112rpx;
+    z-index: 999999;
+}
+
+.blindIcon image {
+    height: 100%;
+    width: 100%;
+}
+

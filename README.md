@@ -5,7 +5,7 @@
 ## 进度
 
 - [x] 羊言羊语（2025 年 8 月 8 日备份）
-- [ ] 绵绵喜话
+- [x] 绵绵喜话（2025 年 8 月 9 日备份）
 
 ## 微信小程序反编译工具
 
@@ -16,3 +16,8 @@ Windows 系统下。下面命令以**羊言羊语**（ID 为`wx8a1c8def35a6e32f`
 ```bash
 KillWxapkg.exe -id="wx8a1c8def35a6e32f" -in="%USERPROFILE%\Documents\WeChat Files\Applet\wx8a1c8def35a6e32f\17" -out="./羊言羊语" -restore -pretty
 ```
+
+## 有用的正则表达式
+
+- 图片/音频/视频文件：`\.(png|jpg|jpeg|bmp|mp3|mp4|wav|gif|webp|svg)`
+- 模型文件（以及动作 JSON）：`\.(glb|gltf|fbx|obj|stl|dae|json|zip)`

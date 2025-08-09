@@ -1,0 +1,14 @@
+{
+    "__warning__": "无效的 page.json [\"requiredBackgroundModes\"]",
+    "disableScroll": true,
+    "navigationBarBackgroundColor": "#B6C8E4",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "喜羊羊",
+    "navigationStyle": "custom",
+    "requiredBackgroundModes": [
+        "audio"
+    ],
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}
