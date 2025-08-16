@@ -1,0 +1,11 @@
+{
+    "disableScroll": true,
+    "homeButton": false,
+    "navigationBarBackgroundColor": "#B6C8E4",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

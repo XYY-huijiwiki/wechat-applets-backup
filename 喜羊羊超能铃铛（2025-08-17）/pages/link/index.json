@@ -1,0 +1,14 @@
+{
+    "__warning__": "无效的 page.json [\"permission\"]",
+    "disableScroll": true,
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序获取周边蓝牙设备信息"
+        }
+    },
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

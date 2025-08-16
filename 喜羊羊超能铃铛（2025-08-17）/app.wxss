@@ -1,0 +1,122 @@
+.button {
+    align-items: center;
+    background: #000;
+    border-radius: 48rpx;
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 32rpx;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    width: 400rpx;
+}
+
+.button.long {
+    width: 100%;
+}
+
+.button.small {
+    font-size: 28rpx;
+    height: 56rpx;
+    width: 144rpx;
+}
+
+.base-container {
+    flex: 0 0;
+    width: 750rpx;
+    z-index: 100;
+}
+
+.base-container > .navigation {
+    box-sizing: border-box;
+    font-size: 36rpx;
+    gap: 16rpx;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    width: 750rpx;
+}
+
+.base-container .left-box,.base-container > .navigation {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.base-container .left-box {
+    justify-content: center;
+    width: 100%;
+}
+
+.base-container .left-box.show-back {
+    justify-content: flex-start;
+}
+
+.base-container .return {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/back-icon.svg) no-repeat 50%/contain;
+    height: 40rpx;
+    margin-right: 16rpx;
+    width: 40rpx;
+}
+
+.base-container .handle {
+    background: url(https://commercial-cdn.xiaoice.com/character-ip/praising-groups-mini-program/frame-icon.svg) no-repeat 50%/contain;
+    height: 48rpx;
+    width: 48rpx;
+}
+
+.navigation-content {
+    color: #35394d;
+    font-size: 36rpx;
+    font-weight: 500;
+}
+
+.index-module__tabBar___j9t81 {
+    align-items: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 90rpx;
+    justify-content: center;
+    min-height: 100rpx;
+    text-align: center;
+    width: 100%;
+}
+
+.index-module__tabBarFixed___tvJTO {
+    bottom: 0;
+    left: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+}
+
+.index-module__tabBarItem___iHj8c {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12rpx;
+    height: 100rpx;
+    justify-content: center;
+    width: 240rpx;
+}
+
+.index-module__tabBarItemTitle___JHNiW {
+    font-family: PingFang SC;
+    font-size: 28rpx;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.index-module__tabBarItemImage___u_7J5 {
+    height: 48rpx;
+    width: 48rpx;
+}
+

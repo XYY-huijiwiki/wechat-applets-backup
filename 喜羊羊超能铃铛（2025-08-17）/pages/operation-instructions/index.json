@@ -1,0 +1,9 @@
+{
+    "disableScroll": true,
+    "homeButton": false,
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

@@ -1,0 +1,30 @@
+.index {
+    background-color: #f5f7fc;
+    height: 100vh;
+    text-align: center;
+}
+
+.index image {
+    height: 400rpx;
+    margin: 0 auto;
+    width: 400rpx;
+}
+
+.index .title {
+    color: #000;
+    font-size: 48rpx;
+    font-weight: 600;
+    margin: 40rpx 0rpx 56rpx;
+}
+
+.index .explain {
+    color: #666;
+    padding: 0rpx 40rpx;
+    text-align: left;
+}
+
+.index .explain .explain-item {
+    line-height: 44rpx;
+    text-align: left;
+}
+

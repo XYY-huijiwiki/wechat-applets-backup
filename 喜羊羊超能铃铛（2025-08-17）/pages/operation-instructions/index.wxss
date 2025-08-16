@@ -1,0 +1,51 @@
+.index-module__instruction___uT3Rk {
+    background: #f7f9fc;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+}
+
+.index-module__instruction___uT3Rk .index-module__container___epejg {
+    box-sizing: border-box;
+    padding: 40rpx;
+    position: relative;
+}
+
+.index-module__instruction___uT3Rk .index-module__title___WlcYD {
+    align-items: center;
+    color: #000;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 48rpx;
+    font-style: normal;
+    font-weight: 600;
+    gap: 24rpx;
+    line-height: normal;
+    margin-bottom: 64rpx;
+}
+
+.index-module__instruction___uT3Rk .index-module__title___WlcYD > image {
+    height: 96rpx;
+    width: 96rpx;
+}
+
+.index-module__instruction___uT3Rk .index-module__divide___ohk9t {
+    border-bottom: 2rpx dashed #ccc;
+    height: 0;
+    margin-bottom: 64rpx;
+    width: 100%;
+}
+
+.index-module__instruction___uT3Rk .index-module__contentImage___UvWGQ {
+    margin-bottom: 20rpx;
+    width: 100%;
+}
+
+.index-module__instruction___uT3Rk .index-module__image4___X7mES,.index-module__instruction___uT3Rk .index-module__image5___a_Ffy {
+    margin-bottom: 16rpx;
+}
+

@@ -1,0 +1,58 @@
+.main-box {
+    margin-bottom: 80rpx;
+}
+
+.main-box .content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 238rpx;
+    padding: 0rpx 80rpx;
+}
+
+.main-box .content .title {
+    color: #000;
+    font-size: 64rpx;
+    font-style: normal;
+    font-weight: 600;
+    height: 90rpx;
+    line-height: 90rpx;
+    margin: 40rpx 0rpx 24rpx;
+    padding-left: 28rpx;
+    position: relative;
+}
+
+.main-box .content .title::before {
+    background: #ffd02c;
+    border-radius: 6rpx;
+    content: "";
+    display: inline-block;
+    height: 68rpx;
+    left: 0rpx;
+    position: absolute;
+    top: 12rpx;
+    width: 12rpx;
+}
+
+.main-box .content .tips {
+    align-items: center;
+    color: #999;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 32rpx;
+    font-weight: 400;
+}
+
+.main-box .content .tips image {
+    height: 40rpx;
+    margin-right: 16rpx;
+    width: 40rpx;
+}
+
+.main-box .bg image {
+    height: 750rpx;
+    width: 750rpx;
+}
+
