@@ -6,6 +6,8 @@
 
 - [x] 羊言羊语（2025 年 8 月 8 日备份）
 - [x] 绵绵喜话（2025 年 8 月 9 日备份）
+- [x] 火花杂物社
+- [ ] 喜羊羊超能铃铛
 
 ## 微信小程序反编译工具
 
@@ -21,3 +23,9 @@ KillWxapkg.exe -id="wx8a1c8def35a6e32f" -in="%USERPROFILE%\Documents\WeChat File
 
 - 图片/音频/视频文件：`\.(png|jpg|jpeg|bmp|mp3|mp4|wav|gif|webp|svg)`
 - 模型文件（以及动作 JSON）：`\.(glb|gltf|fbx|obj|stl|dae|json|zip)`
+
+## 有用的 wget 下载命令
+
+```bash
+wget --no-check-certificate -e robots=off -r -l inf -k -p -E -nc -N -H -P . -i 下载列表.txt
+```

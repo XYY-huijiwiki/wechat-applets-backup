@@ -1,0 +1,19 @@
+.fab-box {
+    position: fixed;
+    z-index: 999;
+}
+
+.transtion-box {
+    transition: all .3s;
+}
+
+.buy {
+    height: 90rpx;
+    width: 142rpx;
+}
+
+.make {
+    height: 128rpx;
+    width: 128rpx;
+}
+

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "喜洋洋大电影",
+    "usingComponents": {
+        "comp": "../../../comp"
+    }
+}

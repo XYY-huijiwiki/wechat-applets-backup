@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/Home/index",
+        "pages/Mine/index",
+        "pages/TemplateDetail/index",
+        "pages/TaskList/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "WeChat"
+    },
+    "tabBar": {
+        "backgroundColor": "#ffffff",
+        "color": "#666A80",
+        "custom": true,
+        "list": [
+            {
+                "pagePath": "pages/Home/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/Mine/index",
+                "text": "我的"
+            }
+        ],
+        "selectedColor": "#5991FF"
+    },
+    "subPackages": [
+        {
+            "root": "pagesA/",
+            "pages": [
+                "pages/PaySuccess/index",
+                "pages/VideoShow/index",
+                "pages/DocumentShow/index",
+                "pages/SharePage/index",
+                "pages/CustomWeb/index",
+                "pages/UploadPhoto/index",
+                "pages/MyCard/index",
+                "pages/CardCheck/index"
+            ]
+        }
+    ]
+}

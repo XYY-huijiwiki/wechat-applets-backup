@@ -1,0 +1,47 @@
+@import "../../sub-vendors.wxss";
+.pay_success_wrap {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.pay_success_wrap Image {
+    display: block;
+    height: 160rpx;
+    margin: 392rpx auto 40rpx;
+    width: 160rpx;
+}
+
+.pay_success_wrap .pay_text {
+    color: #fff;
+    font-family: PingFang SC;
+    font-size: 40rpx;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.pay_success_wrap .pay_success_btn {
+    align-self: center;
+    background: #7366ff;
+    border-radius: 44rpx;
+    color: var(--white,#fff);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 32rpx;
+    font-style: normal;
+    font-weight: 500;
+    height: 88rpx;
+    justify-content: center;
+    left: 50%;
+    line-height: 88rpx;
+    position: absolute;
+    text-align: center;
+    top: 1212rpx;
+    transform: translateX(-50%);
+    width: 480rpx;
+}
+

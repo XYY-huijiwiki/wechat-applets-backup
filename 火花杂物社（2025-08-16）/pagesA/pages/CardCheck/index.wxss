@@ -1,0 +1,111 @@
+@import "../../sub-vendors.wxss";
+.redemption-code-container {
+    background-color: #fff;
+    border-radius: 32rpx;
+    box-shadow: 0 8rpx 24rpx rgba(0,0,0,.05);
+    margin: 40rpx;
+    padding: 60rpx;
+}
+
+.redemption-code-header {
+    margin-bottom: 60rpx;
+    text-align: center;
+}
+
+.redemption-code-title {
+    color: #333;
+    display: block;
+    font-size: 48rpx;
+    font-weight: 700;
+    margin-bottom: 20rpx;
+}
+
+.redemption-code-subtitle {
+    color: #999;
+    display: block;
+    font-size: 28rpx;
+}
+
+.redemption-code-input-container {
+    padding: 60rpx 40rpx;
+    position: relative;
+}
+
+.redemption-code-input,.redemption-code-input-container {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.redemption-code-input {
+    background-color: #fff;
+    border: none;
+    border-radius: 16rpx;
+    font-size: 26rpx;
+    height: 124rpx;
+    padding: 24rpx;
+}
+
+.redemption-code-placeholder {
+    color: #bbb;
+}
+
+.redemption-code-button {
+    background: #7366ff;
+    border-radius: 44rpx;
+    color: #fff;
+    font-size: 32rpx;
+    font-weight: 700;
+    height: 88rpx;
+    line-height: 88rpx;
+    margin-top: 40rpx;
+    text-align: center;
+    width: 100%;
+}
+
+.redemption-code-button.loading {
+    background: #7366ff;
+    opacity: .7;
+}
+
+.redemption-code-rule {
+    margin-top: 56rpx;
+}
+
+.redemption-code-rule-title {
+    color: #fff;
+    font-size: 28rpx;
+    justify-content: space-between;
+    margin-bottom: 32rpx;
+}
+
+.redemption-code-rule-title,.redemption-code-rule-title .redemption-code-rule-title-left {
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.redemption-code-rule-title .redemption-code-rule-title-left {
+    font-size: 32rpx;
+    font-weight: 700;
+}
+
+.redemption-code-rule-title .redemption-code-rule-title-left image {
+    height: 40rpx;
+    margin-right: 8rpx;
+    width: 40rpx;
+}
+
+.redemption-code-rule-title .redemption-code-rule-title-right {
+    color: #80eaff;
+    font-size: 26rpx;
+    padding-left: 40rpx;
+}
+
+.redemption-code-rule-item {
+    color: #fff;
+    font-size: 26rpx;
+    line-height: 40rpx;
+    opacity: .8;
+}
+
